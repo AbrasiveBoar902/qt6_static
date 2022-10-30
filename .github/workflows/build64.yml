@@ -18,7 +18,7 @@ jobs:
       run: |
         # Clone Qt6 repo
         cd ..
-        git clone --recursive https://github.com/qt/qt5 -b 6.4.0
+        git clone https://github.com/qt/qt5 -b 6.4.0
         cd qt5
         perl init-repository -f --module-subset=qt5compat,qt3d,qtbase,qtcharts,qtdeclarative,qtimageformats,qtlanguageserver,qtmqtt,qtmultimedia,qtnetworkauth,qtquick3d,qtquicktimeline,qtserialbus,qtserialport,qtshadertools,qtsvg,qtwebchannel,qtwebengine,qtwebsockets,qtwebview
         # Create shadow build folder
